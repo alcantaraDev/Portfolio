@@ -1,5 +1,6 @@
 import { Link } from "@/components/link";
 import { Logo } from "@/components/logo";
+import { MobileMenu, Menu, MenuButton, MenuLink } from "./mobileMenu";
 
 export function Header() {
     return (
@@ -7,20 +8,18 @@ export function Header() {
         className="
             w-screen h-[80px]
             flex flex-row justify-between items-center
-            px-[30px] md:px-[100px] 
+            px-[30px] lg:px-[100px]
         ">
             <Logo type="name"/>
-            <nav 
-            className="
-                text-white font-light
-                flex flex-row gap-16 items-center
-            "
-            >
-                <a href="#">Home</a>
-                <a href="#">Service</a>
-                <a href="#">Project</a>
-                <Link href="#" type="button">Fale Comigo</Link>
-            </nav>
+            <MobileMenu>
+                <MenuButton/>
+                <Menu>
+                    <MenuLink href="#">Home</MenuLink>
+                    <MenuLink href="#">Service</MenuLink>
+                    <MenuLink href="#">Project</MenuLink>
+                    <MenuLink href="#" type="button">Fale Comigo</MenuLink>
+                </Menu>
+            </MobileMenu>  
         </header>
     )
 }

@@ -11,7 +11,7 @@ export function Logo({ type, width, height }:logoProps) {
         return (
             <div className="flex flex-row items-center gap-2">
                 <img src="simbol.svg" width={30}/>
-                <span className="text-white text-xl font-bold flex flex-row gap-1">
+                <span className="text-white text-xl font-bold hidden md:flex flex-row gap-1">
                     Isaque 
                     <GradientText>Alcantara</GradientText>
                 </span>

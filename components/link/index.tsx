@@ -1,4 +1,4 @@
-type linkProps = {
+export type linkProps = {
     children: JSX.Element | JSX.Element[] | string
     href: string
     type?: "default" | "button"
