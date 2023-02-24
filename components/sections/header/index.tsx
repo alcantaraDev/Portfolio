@@ -15,8 +15,8 @@ export function Header() {
                 <MenuButton/>
                 <Menu>
                     <MenuLink href="#">Home</MenuLink>
-                    <MenuLink href="#">Service</MenuLink>
-                    <MenuLink href="#">Project</MenuLink>
+                    <MenuLink href="#">Serviços</MenuLink>
+                    <MenuLink href="#">Projetos</MenuLink>
                     <MenuLink href="#" type="button">Fale Comigo</MenuLink>
                 </Menu>
             </MobileMenu>  
