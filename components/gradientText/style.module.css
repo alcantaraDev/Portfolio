@@ -1,0 +1,5 @@
+.text {
+    @apply bg-gradient-to-r from-[#8F19D7] to-[#FF5555] font-bold ;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;   
+}
