@@ -13,7 +13,7 @@ export function Link({children, href, type, target, className}:linkProps) {
             href={href} 
             target={target}
             className={`
-            py-2 px-4 rounded-lg
+            py-2 px-4 rounded-lg 
             text-white font-bold
             bg-gradient-to-r from-[#8F19D7] to-[#FF5555]
             ${className}
