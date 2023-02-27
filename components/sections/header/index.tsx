@@ -8,7 +8,7 @@ export function Header() {
         className="
             w-screen h-[80px]
             flex flex-row justify-between items-center
-            px-[30px] lg:px-[100px]
+            px-[30px] xl:px-[100px]
         ">
             <Logo type="name"/>
             <MobileMenu>
