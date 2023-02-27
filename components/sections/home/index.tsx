@@ -6,14 +6,14 @@ export function HomeSection() {
         <section
         className="
         w-screen h-[calc(100vh-80px)]
-        flex flex-row justify-center items-center gap-[20px] lg:gap-[100px]
+        flex flex-col-reverse lg:flex-row justify-center items-center gap-[20px] lg:gap-[100px]
         "
         >
             <div className="flex flex-col gap-5">
                 <h1 
                 className="
                 text-white font-bold
-                text-4xl sm:text-6xl  md:text-5xl 2xl:text-[6vh]
+                text-4xl sm:text-6xl  md:text-5xl 2xl:text-[3vw]
                 "
                 >
                     <GradientText className=" text-[1.5em]">Olá!</GradientText>
@@ -28,8 +28,8 @@ export function HomeSection() {
             </div>
             <img 
             className="
-            hidden md:block
-            lg:w-[25vw]
+            hidden lg:block
+            w-[25vw]
             " 
             src="/home-cover.png"/>
         </section>
