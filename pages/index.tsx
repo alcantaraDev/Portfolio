@@ -2,6 +2,7 @@ import { BackGround } from "@/components/background";
 import { Footer } from "@/components/sections/footer";
 import { HeadSection } from "@/components/sections/head";
 import { Header } from "@/components/sections/header";
+import { HomeSection } from "@/components/sections/home";
 
 import { Poppins } from "next/font/google"
 
@@ -14,9 +15,9 @@ export default function Home() {
       <BackGround/>
       <Header/>
       <main className="min-h-[calc(100vh-220px)]">
-        
+        <HomeSection/>
       </main>
-      <Footer/>
+      {/* <Footer/> */}
     </div>
   )
 }
