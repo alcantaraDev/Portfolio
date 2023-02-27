@@ -17,7 +17,7 @@ export default function Home() {
       <main className="min-h-[calc(100vh-220px)]">
         <HomeSection/>
       </main>
-      {/* <Footer/> */}
+      <Footer/>
     </div>
   )
 }
