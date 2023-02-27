@@ -10,7 +10,7 @@ export function CloseButton() {
 
     return (
         <button 
-        className="md:hidden absolute top-8 right-8"
+        className="lg:hidden absolute top-8 right-8"
         onClick={handleClick}
         >
             <X size={40} />

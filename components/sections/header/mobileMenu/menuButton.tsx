@@ -10,7 +10,7 @@ export function MenuButton() {
 
     return (
         <button 
-        className="text-white md:hidden"
+        className="text-white lg:hidden"
         onClick={handleClick}
         >
             <List size={40}/>
