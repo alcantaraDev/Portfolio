@@ -25,10 +25,13 @@ export function SlideIn({children, direction, delay, scrollAnimation}:animatePro
     if (scrollAnimation) {
         return (
             <div 
-            className={ startScrollAnimation ? slideIn[direction] : ""}
+            className={ `
+            ${startScrollAnimation ? slideIn[direction] : ""}
+            delay-[.4s]
+            opacity-0
+            `}
             style={{
-                animationDelay: ((delay ?? 0)+400)+"ms",
-                opacity: 0,
+                animationDelay: (delay ?? 0) + 400 + "ms"
             }}
             ref={elementRef}
             >
@@ -39,11 +42,11 @@ export function SlideIn({children, direction, delay, scrollAnimation}:animatePro
     
     return (
         <div 
-        className={slideIn[direction]}
-        style={{
-            animationDelay: delay+"ms",
-            opacity: 0,
-        }}
+        className={`
+        ${slideIn[direction]}
+        delay-[${delay ?? 0}ms]
+        opacity-0
+        `}
         ref={elementRef}
         >
             {children}
