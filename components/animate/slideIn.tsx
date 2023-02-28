@@ -12,12 +12,14 @@ type animateProps = {
 export function SlideIn({children, direction, delay, scrollAnimation}:animateProps) {
     const { scrollY } = useScroll()
     const [startScrollAnimation, setStartScrollAnimation] = useState(false)
-    const elementRef = useRef()
+    const elementRef = useRef<HTMLDivElement>(null)
 
     useEffect(() => {
-        const element = elementRef.current
-        if (scrollY + screen.height >= element.offsetTop + element.clientHeight/1.2) {
-            setStartScrollAnimation(true)
+        if ( elementRef.current ) {
+            const element:{offsetTop:number, clientHeight:number} = elementRef.current
+            if (scrollY + screen.height >= element.offsetTop + element.clientHeight/1.2) {
+                setStartScrollAnimation(true)
+            }
         }
     }, [scrollY])
 

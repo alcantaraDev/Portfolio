@@ -5,10 +5,10 @@ import { MenuLink } from "./menuLink";
 
 type contextProps = {
     active: boolean
-    setActive?: Function
+    setActive: Function
 }
 
-const MobileMenuContext = createContext<contextProps>({active:false})
+const MobileMenuContext = createContext<contextProps>({active:false, setActive:()=>{}})
 
 type mobileMenuProps = {
     children: JSX.Element | JSX.Element[] | string
