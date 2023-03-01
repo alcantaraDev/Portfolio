@@ -1,6 +1,7 @@
 import { AnimationContainer } from "@/components/animate";
 import { BackGround } from "@/components/background";
 import { AbaoutMe } from "@/components/sections/aboutMe";
+import { ServicesSection } from "@/components/sections/services";
 import { Footer } from "@/components/sections/footer";
 import { HeadSection } from "@/components/sections/head";
 import { Header } from "@/components/sections/header";
@@ -20,6 +21,7 @@ export default function Home() {
         <main className="min-h-[calc(100vh-220px)]">
           <HomeSection/>
           <AbaoutMe/>
+          <ServicesSection/>
         </main>
         <Footer/>
       </div>
