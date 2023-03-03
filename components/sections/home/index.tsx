@@ -15,7 +15,7 @@ export function HomeSection() {
                     <h1 
                     className="
                     text-white font-bold
-                    text-4xl sm:text-6xl  md:text-5xl 2xl:text-[3vw]
+                    text-[12vw] md:text-[8vw]  lg:text-5xl 2xl:text-[3vw]
                     "
                     >
                         <GradientText className=" text-[1.5em]">Olá!</GradientText>

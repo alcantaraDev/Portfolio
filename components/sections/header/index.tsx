@@ -9,6 +9,7 @@ export function Header() {
             w-screen h-[80px]
             flex flex-row justify-between items-center
             px-[30px] xl:px-[100px]
+            fixed z-10
         ">
             <Logo type="name"/>
             <MobileMenu>
