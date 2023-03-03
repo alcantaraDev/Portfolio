@@ -4,9 +4,11 @@ export type linkProps = {
     type?: "default" | "button"
     target?: "_blacnk"
     className?: string
+    textColor?: string
+    bgColor?: string
 }
 
-export function Link({children, href, type, target, className}:linkProps) {
+export function Link({children, href, type, target, className, bgColor, textColor}:linkProps) {
     if (type == "button") {
         return (
             <a 
@@ -18,6 +20,10 @@ export function Link({children, href, type, target, className}:linkProps) {
             bg-gradient-to-r from-[#8F19D7] to-[#FF5555]
             ${className}
             `}
+            style={{
+                background: bgColor ?? "",
+                color: textColor
+            }}
             >
                 {children}
             </a>

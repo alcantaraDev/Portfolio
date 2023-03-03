@@ -8,6 +8,7 @@ import { Header } from "@/components/sections/header";
 import { HomeSection } from "@/components/sections/home";
 
 import { Poppins } from "next/font/google"
+import { SocialMediaSection } from "@/components/sections/SocialMedia";
 
 const poppins = Poppins({ subsets: ["latin"], weight:["100", "200", "300", "400", "500", "600", "700", "800", "900"] })
  
@@ -22,6 +23,7 @@ export default function Home() {
           <HomeSection/>
           <AbaoutMe/>
           <ServicesSection/>
+          <SocialMediaSection/>
         </main>
         <Footer/>
       </div>
