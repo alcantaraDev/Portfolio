@@ -1,3 +1,4 @@
+import { BackgorundScroll } from "@/components/animate/backgroundScroll";
 import { Link } from "@/components/link";
 import { Logo } from "@/components/logo";
 import { MobileMenu, Menu, MenuButton, MenuLink } from "./mobileMenu";
@@ -7,20 +8,27 @@ export function Header() {
         <header 
         className="
             w-screen h-[80px]
-            flex flex-row justify-between items-center
-            px-[30px] xl:px-[100px]
             fixed z-10
         ">
-            <Logo type="name"/>
-            <MobileMenu>
-                <MenuButton/>
-                <Menu>
-                    <MenuLink href="#">Home</MenuLink>
-                    <MenuLink href="#">Serviços</MenuLink>
-                    <MenuLink href="#">Projetos</MenuLink>
-                    <MenuLink href="#" type="button">Fale Comigo</MenuLink>
-                </Menu>
-            </MobileMenu>  
+            <BackgorundScroll 
+            bgColor="#181818" 
+            offset={80} 
+            className="
+            flex flex-row justify-between items-center
+            px-[30px] xl:px-[100px]
+            "
+            >
+                <Logo type="name"/>
+                <MobileMenu>
+                    <MenuButton/>
+                    <Menu>
+                        <MenuLink href="#">Home</MenuLink>
+                        <MenuLink href="#">Serviços</MenuLink>
+                        <MenuLink href="#">Projetos</MenuLink>
+                        <MenuLink href="#" type="button">Fale Comigo</MenuLink>
+                    </Menu>
+                </MobileMenu>  
+            </BackgorundScroll>
         </header>
     )
 }
