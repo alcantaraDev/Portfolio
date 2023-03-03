@@ -1,3 +1,5 @@
+import { SlideIn } from "@/components/animate"
+import { GradientText } from "@/components/gradientText"
 import { Browsers, DeviceMobile, Swatches, User } from "phosphor-react"
 
 type serviceCardProps = {
@@ -31,23 +33,25 @@ export function ServiceCard({type}:serviceCardProps) {
     const data = services[type]
 
     return (
-        <div 
-        className="
-        w-[260px] h-[200px] rounded-lg bg-[#222] relative
-        flex flex-col justify-center items-center px-[18px]
-        text-center
-        ">
+        <SlideIn direction="bottomToTop" scrollAnimation>
             <div 
             className="
-            w-[60px] h-[60px] bg-gray rounded-[18px]
-            flex justify-center items-center
-            absolute top-[-30px] left-[100px]
-            "
-            >
-                {data.icon}
+            w-[260px] h-[200px] rounded-lg bg-[#222] relative
+            flex flex-col justify-center items-center px-[18px]
+            text-center
+            ">
+                <div 
+                className="
+                w-[60px] h-[60px] bg-gray rounded-[18px]
+                flex justify-center items-center
+                absolute top-[-30px] left-[100px]
+                "
+                >
+                    {data.icon}
+                </div>
+                <h3 className="font-bold text-xl mb-5" ><GradientText>{data.title}</GradientText></h3>
+                <p className="font-light text-[14px]">{data.text}</p>
             </div>
-            <h3 className="font-bold text-xl mb-5" >{data.title}</h3>
-            <p className="font-light text-[14px]">{data.text}</p>
-        </div>
+        </SlideIn>
     )
 }

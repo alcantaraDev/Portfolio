@@ -25,7 +25,7 @@ export function AbaoutMe() {
                         Programador
                     </h2>
                     <p className="text-[0.4em]">
-                        Meu trabalho é fazer o seu cliente ter a melhor experiência ao acessar o site
+                        Meu trabalho é fazer o seu cliente ter a melhor experiência ao acessar o seu site
                     </p>
                 </div>
             </SlideIn>

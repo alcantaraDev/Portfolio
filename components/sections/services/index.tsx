@@ -9,16 +9,18 @@ export function ServicesSection() {
         text-white
         "
         >
-            <h2 className="text-[40px] font-light mb-[50px]">Serviços</h2>
+            <h2 className="text-[40px] font-light mb-[60px]">Serviços</h2>
             <div
             className="
-            flex  flex-row justify-center items-center gap-[40px]
+            flex  flex-col justify-center items-center gap-[60px]
+            md:grid md:grid-cols-2
+            xl:flex xl:flex-row
             "
             >
-                <ServiceCard type="identidadeVisual"/>
-                <ServiceCard type="ux"/>
                 <ServiceCard type="sites"/>
-                <ServiceCard type="apps"/>
+                {/* <ServiceCard type="apps"/>
+                <ServiceCard type="identidadeVisual"/> */}
+                <ServiceCard type="ux"/>
             </div>
         </section>
     )
