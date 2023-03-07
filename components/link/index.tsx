@@ -1,5 +1,5 @@
 export type linkProps = {
-    children: JSX.Element | JSX.Element[] | string
+    children: JSX.Element | (JSX.Element | string)[] | string
     href: string
     type?: "default" | "button"
     target?: "_blacnk"
