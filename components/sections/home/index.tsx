@@ -4,7 +4,7 @@ import { Link } from "@/components/link";
 
 export function HomeSection() {
     return (
-        <section
+        <section id="home"
         className="
         w-screen h-[calc(100vh-80px)]
         flex flex-col-reverse lg:flex-row justify-center items-center gap-[20px] lg:gap-[100px]

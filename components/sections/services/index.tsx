@@ -2,7 +2,7 @@ import { ServiceCard } from "./serviceCard";
 
 export function ServicesSection() {
     return (
-        <section 
+        <section id="services"
         className="
         w-screen py-[160px]
         flex  flex-col justify-center items-center 

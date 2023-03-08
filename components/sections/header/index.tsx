@@ -22,10 +22,10 @@ export function Header() {
                 <MobileMenu>
                     <MenuButton/>
                     <Menu>
-                        <MenuLink href="#">Home</MenuLink>
-                        <MenuLink href="#">Serviços</MenuLink>
+                        <MenuLink href="#home">Home</MenuLink>
+                        <MenuLink href="#services">Serviços</MenuLink>
                         <MenuLink href="#">Projetos</MenuLink>
-                        <MenuLink href="#" type="button">Fale Comigo</MenuLink>
+                        <MenuLink href="#contact" type="button">Fale Comigo</MenuLink>
                     </Menu>
                 </MobileMenu>  
             </BackgorundScroll>

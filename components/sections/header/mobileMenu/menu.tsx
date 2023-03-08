@@ -11,7 +11,7 @@ export function Menu({children}:menuProps) {
     return (
         <nav
         className={`
-        text-white font-light
+        text-white font-light text-[20px] lg:text-[16px]
         ${active ? "flex" : "hidden lg:flex"}
         fixed top-0 left-0 w-screen h-screen bg-black
         flex-col gap-16 items-center justify-center
