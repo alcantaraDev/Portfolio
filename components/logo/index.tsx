@@ -6,9 +6,10 @@ type logoProps = {
     width?: number
     height?: number
     strokeWidth?: number
+    className?: string
 }
 
-export function Logo({ type, width, height, strokeWidth }:logoProps) {
+export function Logo({ type, width, height, strokeWidth, className }:logoProps) {
     if (type == "name") return (
         <div className="flex flex-row items-center gap-2">
             <img src="simbol.svg" className="w-10 md:w-8"/>
@@ -20,10 +21,10 @@ export function Logo({ type, width, height, strokeWidth }:logoProps) {
     ) 
 
     else if (type == "outline") return (
-        <OutlineSimbol width={width} height={height} strokeWidth={strokeWidth}/>
+        <OutlineSimbol width={width} height={height} strokeWidth={strokeWidth} className={className}/>
     )
 
     return (
-        <img src="/simbol.svg" width={width ?? "auto"} height={height ?? "auto"}/>
+        <img src="/simbol.svg" width={width ?? "auto"} height={height ?? "auto"} className={className}/>
     )
 }
