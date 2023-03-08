@@ -29,12 +29,8 @@ export function SlideIn({children, direction, delay, scrollAnimation}:animatePro
             <div 
             className={ `
             ${startScrollAnimation ? slideIn[direction] : ""}
-            delay-[.4s]
             opacity-0
             `}
-            style={{
-                animationDelay: (delay ?? 0) + 400 + "ms"
-            }}
             ref={elementRef}
             >
                 {children}
