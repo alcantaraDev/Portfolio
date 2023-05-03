@@ -11,6 +11,7 @@ export function formatID(id:string) {
 }
 
 export type project = {
+    title:string
     id:string
     description:string
     inHomePage:boolean
@@ -25,9 +26,10 @@ export function projectFormat(project:any):project {
     const properties = project.properties
     return {
         id: formatID(project.id),
-        description:properties.description.rich_text[0].plain_text,
+        title:properties.title.title[0]?.text.content,
+        description:properties.description.rich_text[0]?.plain_text,
         inHomePage:properties.inHomePage.checkbox,
-        type:properties.type.select.name,
+        type:properties.type.select?.name,
         desktopImageUrl:properties.desktopImageUrl.url,
         mobileImageUrl:properties.mobileImageUrl.url,
         githubUrl:properties.githubUrl.url,
