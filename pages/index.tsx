@@ -18,14 +18,14 @@ export default function Home() {
     <AnimationContainer>
       <div className={poppins.className}>
         <HeadSection/>
-        <BackGround/>
+        {/* <BackGround/> */}
         <Header/>
         <main className="min-h-[calc(100vh-220px)]">
           <HomeSection/>
-          <AbaoutMe/>
+          {/* <AbaoutMe/>
           <ServicesSection/>
           <SocialMediaSection/>
-          <ContactSection/>
+          <ContactSection/> */}
         </main>
         <Footer/>
       </div>
