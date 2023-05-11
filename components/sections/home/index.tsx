@@ -10,7 +10,7 @@ export function HomeSection() {
         h-screen
         "
         >
-            <h1 className="text-6xl text-center font-bold w-[478px]">
+            <h1 className="text-[clamp(2.25rem,10vw,4rem)] text-center font-bold w-[clamp(300px,100%,478px)]">
                 Precisa de um Designer?
             </h1>
             <Link href="#" type="pageButton">
