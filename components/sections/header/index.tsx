@@ -25,7 +25,7 @@ export function Header() {
                         <MenuLink href="#home">Home</MenuLink>
                         <MenuLink href="#services">Serviços</MenuLink>
                         <MenuLink href="#">Projetos</MenuLink>
-                        <MenuLink href="#contact" type="button">Fale Comigo</MenuLink>
+                        <MenuLink href="#contact" type="pageButton">Fale Comigo</MenuLink>
                     </Menu>
                 </MobileMenu>  
             </BackgorundScroll>
