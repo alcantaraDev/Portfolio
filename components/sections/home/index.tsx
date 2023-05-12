@@ -10,10 +10,10 @@ export function HomeSection() {
         h-screen
         "
         >
-            <h1 className="text-[clamp(2.25rem,10vw,4rem)] text-center font-bold w-[clamp(300px,100%,478px)]">
+            <h1 className="text-[clamp(2.25rem,10vw,4rem)] text-center font-bold w-[clamp(300px,100%,478px)] animate-show-down-to-top">
                 Precisa de um Designer?
             </h1>
-            <Link href="#" type="pageButton">
+            <Link className="animate-show-down-to-top" href="#" type="pageButton">
                 Conheça meu trabalho
             </Link>
         </section>
