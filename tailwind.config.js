@@ -13,6 +13,15 @@ module.exports = {
       colors: {
         gray: "#282828",
         black: "#181818",
+      },
+      keyframes: {
+        "show-down-to-top": {
+          "0%": { transform: "translateY(8px)", opacity: "0" },
+          "100%": { transform: "translateY(0px)", opacity: "1" }
+        }
+      },
+      animation: {
+        "show-down-to-top": "show-down-to-top 1s ease-out"
       }
     },
   },
