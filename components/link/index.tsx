@@ -18,10 +18,11 @@ function LinkComponent({children, href, type, target, className, bgColor, textCo
             href={href} 
             target={target}
             className={`
-            py-2 px-4 rounded-lg 
+            py-2 px-4 
             text-white font-bold
             bg-gradient-to-r from-[#8F19D7] to-[#FF5555]
             flex flex-row justify-center items-center gap-2
+            group hover:-translate-y-1 ease-in duration-150
             ${className}
             `}
             style={{
@@ -31,13 +32,17 @@ function LinkComponent({children, href, type, target, className, bgColor, textCo
             >
                 {children}
                 {type == "button" && <ArrowSquareOut size={18}/>}
-                {type == "pageButton" && <ArrowDown size={18}/>}
+                {type == "pageButton" && <ArrowDown className=" group-hover:scale-125 ease-in duration-150" size={18}/>}
             </Link>
         )
     }
 
     return (
-        <Link href={href} target={target} className={`${className} flex flex-row justify-center items-center gap-2`}>
+        <Link 
+        href={href} 
+        target={target} 
+        className={`${className} flex flex-row justify-center items-center gap-2 hover:underline`}
+        >
             {children}
         </Link>
     )
