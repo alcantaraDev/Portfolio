@@ -12,7 +12,12 @@ const poppins = Poppins({ subsets: ["latin"], weight:["100", "200", "300", "400"
  
 export default function Home() {
   return (
-      <div className={poppins.className}>
+      <div 
+      className={poppins.className} 
+      onScroll={event => {
+        console.log(event)
+      }}
+      >
         <HeadSection/>
         <Header/>
         <main className="min-h-[calc(100vh-220px)]">
