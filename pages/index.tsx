@@ -4,6 +4,7 @@ import { Footer } from "@/components/sections/footer";
 import { HeadSection } from "@/components/sections/head";
 import { Header } from "@/components/sections/header";
 import { HomeSection } from "@/components/sections/home";
+import { Services } from "@/components/sections/services";
 
 import { Poppins } from "next/font/google"
 
@@ -17,6 +18,7 @@ export default function Home() {
         <main className="min-h-[calc(100vh-220px)]">
           <HomeSection/>
           <AboutMe/>
+          <Services/>
           <ContactMe/>
         </main>
         <Footer/>

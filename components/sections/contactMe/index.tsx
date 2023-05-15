@@ -5,7 +5,7 @@ import { ContactForm } from "./contactForm";
 
 export function ContactMe() {
     return (
-        <section className="px-[30px] py-40 flex flex-col gap-20 items-center">
+        <section id="contactMe" className="px-[30px] py-40 flex flex-col gap-20 items-center">
             <h2 className="text-[clamp(26px,8vw,40px)] text-center">
                 <GradientText>Vamos criar um projeto juntos!</GradientText>
             </h2>
