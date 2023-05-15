@@ -10,7 +10,7 @@ export function Footer() {
                 <h3 className="font-bold">Contato</h3>
                 <a href="mailto: alcantara.isaque167@gmail.com">alcantara.isaque167@gmail.com</a>
             </div>
-            <span className="text-[12px]">© 2023 - Isaque Alcantara Dev</span>
+            <span className="text-[12px]">© 2023 - Isaque Alcantara</span>
         </footer>
     )
 }
