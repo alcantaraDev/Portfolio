@@ -4,7 +4,6 @@ import { InputForm } from "./inputForm";
 import { FormProvider, useForm } from "react-hook-form";
 
 import { SubmitButton, submitButtonStates } from "./submitButton";
-import { error } from "console";
 
 export type requestSatus = "waiting" | "ok" | "error" | undefined
 
