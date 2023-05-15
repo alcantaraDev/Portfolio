@@ -13,7 +13,7 @@ export function HomeSection() {
             <h1 className="text-[clamp(2.25rem,10vw,4rem)] text-center font-bold w-[clamp(300px,100%,478px)] animate-show-down-to-top">
                 Precisa de um Designer?
             </h1>
-            <Link className="animate-show-down-to-top" href="#" type="pageButton">
+            <Link className="animate-show-down-to-top" href="#services" type="pageButton">
                 Conheça meu trabalho
             </Link>
         </section>
