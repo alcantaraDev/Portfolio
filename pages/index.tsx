@@ -1,5 +1,5 @@
 import { AboutMe } from "@/components/sections/abouMe";
-import { ArtclesSection } from "@/components/sections/artcles";
+import { ContactMe } from "@/components/sections/contactMe";
 import { Footer } from "@/components/sections/footer";
 import { HeadSection } from "@/components/sections/head";
 import { Header } from "@/components/sections/header";
@@ -17,7 +17,7 @@ export default function Home() {
         <main className="min-h-[calc(100vh-220px)]">
           <HomeSection/>
           <AboutMe/>
-          {/* <ArtclesSection/> */}
+          <ContactMe/>
         </main>
         <Footer/>
       </div>
