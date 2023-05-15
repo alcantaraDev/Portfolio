@@ -36,3 +36,21 @@ export function projectFormat(project:any):project {
         appUrl:properties.appUrl.url,
     }
 }
+
+export type contactType = {
+    id: string
+    name: string
+    email: string
+    msg: string
+}
+
+export function formatContact(response:any):contactType {
+    const properties = response.properties
+
+    return {
+        id: formatID(response.id),
+        name: properties.name.title[0].text.content,
+        email: properties.email.email,
+        msg: properties.msg.rich_text[0].text.content
+    }
+}
