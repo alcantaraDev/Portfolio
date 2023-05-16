@@ -32,7 +32,8 @@ export function Services() {
     return (
         <section id="services">
             {services.map((service, index) => (
-            <Service 
+            <Service
+            key={index} 
             {...service} 
             reverse={index % 2 == 0 ? true : false}
             />

@@ -7,7 +7,7 @@ import profileImage from "@/public/profile.png"
 export function AboutMe() {
     return (
         <section
-        className="h-screen flex flex-col sm:flex-row justify-center items-center gap-[80px] px-[30px]"
+        className="h-screen flex flex-col md:flex-row justify-center items-center gap-[80px] px-[30px]"
         >
             <div className="text-white w-[clamp(292px,80%,412px)]">
                 <span className="text-3xl font-bold">Sou</span>
